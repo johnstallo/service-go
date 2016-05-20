@@ -7,7 +7,8 @@ import(
 )
 
 func indexHandler( w http.ResponseWriter, r *http.Request){
-	fmt.Fprintf(w, "Hello JOHN from service B!!")
+    hostname, _ := os.Hostname()
+	fmt.Fprintf(w, "Hello from service B running on ", hostname)
 }
 
 func main(){
