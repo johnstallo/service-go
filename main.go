@@ -18,4 +18,3 @@ func main(){
     fmt.Println("PORT: ", myport)
     http.ListenAndServe(myport, nil)
 }
-
